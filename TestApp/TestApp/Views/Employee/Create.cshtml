@@ -1,0 +1,100 @@
+﻿@model EmployeeDto
+@{
+    ViewData["Title"] = "Update Employee";
+}
+
+<div id ="download">
+    <input type="file" id="fileUpload"  style="display:none;" />
+    <label for="fileUpload" class="btn btn-primary btn-sx pull-left" style="margin-top:20px;margin-bottom: 20px;">Import Excel</label>
+    @*<input type="file" id ="excelfile" sstyle="display:none;" />*@
+   @* <button type="button" onclick="DownloadTemplate()">Sample Sheet</button>*@
+</div>
+<hr />
+<div id="dvCSV">
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#fileUpload").bind("change", function () {
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.xlsx)$/;
+            if (regex.test($("#fileUpload").val().toLowerCase())) {
+                if (typeof (FileReader) != "undefined") {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var table = $("<table />");
+                        var rows = e.target.result.split("\n");
+                        for (var i = 0; i < rows.length; i++) {
+                            var row = $("<tr />");
+                            var cells = rows[i].split(",");
+                            if (cells.length > 1) {
+                                for (var j = 0; j < cells.length; j++) {
+                                    var cell = $("<td />");
+                                    cell.html(cells[j]);
+                                    row.append(cell);
+                                }
+                                table.append(row);
+                            }
+                        }
+                        $("#dvCSV").html('');
+                        $("#dvCSV").append(table);
+                    }
+                    reader.readAsText($("#fileUpload")[0].files[0]);
+                } else {
+                    alert("This browser does not support HTML5.");
+                }
+            } else {
+                alert("Please upload a valid CSV or Excel file.");
+            }
+        });
+    });
+</script>
+@*<link rel="Stylesheet" type="text/css" href="CSS/uploadify.css" />
+<script type="text/javascript" src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+<script type="text/javascript" src="scripts/jquery.uploadify.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#<%=FileUpload1.ClientID%>").fileUpload({
+            'uploader': 'scripts/uploader.swf',
+            'cancelImg': 'images/cancel.png',
+            'buttonText': 'Browse Files',
+            'script': 'Upload.ashx',
+            'folder': 'uploads',
+            'fileDesc': 'Excel Files',
+            'fileExt': '*.xlsx',
+            'multi': false,
+            'auto': true
+        });
+ 
+        $('#btnDisplay').click(function () {
+            $.ajax({
+                type: "POST",
+                url: "Default.aspx/BindExcelData",
+                data: '{}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("#tblExcel").empty();
+                    var xmlDoc = $.parseXML(response.d);
+                    var xml = $(xmlDoc);
+                    var details = xml.find("ExcelData");
+                    var table = $("#tblExcel");
+                    var row = $(table[0].insertRow(-1));
+                    details.eq(0).children().each(function () {
+                        var headerCell = $("<th />");
+                        headerCell.html(this.nodeName);
+                        row.append(headerCell);
+                    });
+                    $(details).each(function () {
+                        row = $(table[0].insertRow(-1));
+                        $(this).children().each(function () {
+                            var cell = $("<td />");
+                            cell.html($(this).text());
+                            row.append(cell);
+                        });
+                    });
+                }
+            });
+            return false;
+        });
+    });
+</script>*@

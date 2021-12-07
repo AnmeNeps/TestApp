@@ -1,0 +1,15 @@
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\TestApp.Core.deps.json
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\TestApp.Core.dll
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\ref\TestApp.Core.dll
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\TestApp.Core.pdb
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\TestApp.Data.dll
+E:\VSProject\TestApp\TestApp\TestApp.Core\bin\Debug\net6.0\TestApp.Data.pdb
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.csproj.AssemblyReference.cache
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.AssemblyInfoInputs.cache
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.AssemblyInfo.cs
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.csproj.CoreCompileInputs.cache
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.csproj.CopyComplete
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.dll
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\ref\TestApp.Core.dll
+E:\VSProject\TestApp\TestApp\TestApp.Core\obj\Debug\net6.0\TestApp.Core.pdb

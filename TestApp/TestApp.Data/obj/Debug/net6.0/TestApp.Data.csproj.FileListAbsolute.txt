@@ -1,0 +1,14 @@
+E:\VSProject\TestApp\TestApp\TestApp.Data\bin\Debug\net6.0\TestApp.Data.deps.json
+E:\VSProject\TestApp\TestApp\TestApp.Data\bin\Debug\net6.0\TestApp.Data.dll
+E:\VSProject\TestApp\TestApp\TestApp.Data\bin\Debug\net6.0\ref\TestApp.Data.dll
+E:\VSProject\TestApp\TestApp\TestApp.Data\bin\Debug\net6.0\TestApp.Data.pdb
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.AssemblyInfoInputs.cache
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.AssemblyInfo.cs
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.csproj.CoreCompileInputs.cache
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.dll
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\ref\TestApp.Data.dll
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.pdb
+E:\VSProject\TestApp\TestApp\TestApp.Data\bin\Debug\net6.0\TestApp.Data.runtimeconfig.json
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.csproj.AssemblyReference.cache
+E:\VSProject\TestApp\TestApp\TestApp.Data\obj\Debug\net6.0\TestApp.Data.genruntimeconfig.cache
